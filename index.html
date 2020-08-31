@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO APP</title>
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-menu">
+        <div class="title">E-<span>Memory</span></div>
+        <div class="sidebar-btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li><a href="https://www.google.com/"><i class="fa fa-search"></i></a></li>
+          <li><a href="#"><i class="fa fa-bell"></i></a></li>
+          <!-- <li><button id="kloj"><i class="fa fa-power-off"></i></button></li> -->
+          <li><a href="#" id="kloj"><i class="fa fa-power-off"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header-Menu -->
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <center class="profile">
+          <img src="./img/IMG.jpg" alt="">
+          <p>Khagani</p>
+        </center>
+        <li class="item">
+          <a href="#" class="menu-btn">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+        </li>
+        <li class="item" id="profile">
+          <a href="#profile" class="menu-btn">
+            <i class="fas fa-user-circle"></i><span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+          </a>
+          <div class="sub-menu">
+            <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+            <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+          </div>
+        </li>
+
+        <li class="item" id="messages">
+          <a href="#messages" class="menu-btn">
+            <i class="fas fa-envelope"></i><span>Messages<i class="fas fa-chevron-down drop-down"></i></span>
+          </a>
+          <div class="sub-menu">
+            <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+            <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+            <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+          </div>
+        </li>
+
+        <li class="item" id="settings">
+          <a href="#settings" class="menu-btn">
+            <i class="fas fa-cog"></i><span>Settings<i class="fas fa-chevron-down drop-down"></i></span>
+          </a>
+          <div class="sub-menu">
+            <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+            <a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+          </div>
+        </li>
+
+        <li class="item">
+          <a href="#" class="menu-btn">
+            <i class="fas fa-info-circle"></i><span>About</span>
+          </a>
+        </li>
+
+      </div>
+    </div>
+
+    <!-- TO_DO LIST -->
+
+    <!-- <link rel="stylesheet" href="../index.html"> -->
+    <div class="main-container">
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <!-- TO-DO LIST -->
+          <div class="todoList">
+            <div class="content">
+              <form class="add">
+                <input type="text" name="add" placeholder="Add task...">
+                <div class="input-buttons">
+                  <a href="#0" class="add-todo">
+                    <i class="fas fa-plus add"></i>
+                  </a>
+                </div>
+              </form>
+              <ul class="todos">
+                <li>
+                  <input type="checkbox" id="todo_1">
+                  <label for="todo_1">
+                    <span class="check"></span>
+                    Task 1
+                  </label>
+                  <i class="far fa-trash-alt delete"></i>
+                </li>
+                <li>
+                  <input type="checkbox" id="todo_2">
+                  <label for="todo_2">
+                    <span class="check"></span>
+                    Task 2
+                  </label>
+                  <i class="far fa-trash-alt delete"></i>
+                </li>
+                <li>
+                  <input type="checkbox" id="todo_3">
+                  <label for="todo_3">
+                    <span class="check"></span>
+                    Task 3
+                  </label>
+                  <i class="far fa-trash-alt delete"></i>
+                </li>
+                <li>
+                  <input type="checkbox" id="todo_4">
+                  <label for="todo_4">
+                    <span class="check"></span>
+                    Task 3
+                  </label>
+                  <i class="far fa-trash-alt delete"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="news-container">
+            <div class="container">
+              <label for="#">
+                <h3>Notes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam magni veniam praesentium quae.
+                  Quidem
+                  unde quo maiores eos repudiandae voluptate labore, dolorem similique natus hic consectetur dicta
+                  distinctio
+                  sit nostrum debitis. Aliquid voluptate quas, eligendi officiis cumque enim, quidem dignissimos nisi id
+                  quisquam expedita quo quaerat eum numquam earum optio nulla, atque tenetur impedit recusandae magni
+                  deserunt
+                  a nobis commodi? Dolore repudiandae cumque aperiam, iusto illo odio, aliquam quod tempore magnam iure
+                  facilis voluptatem ab eligendi est tenetur quos itaque ullam molestiae corporis quaerat ipsum
+                  obcaecati!
+                  Iusto deleniti eum, sapiente expedita quae quos hic! At quis consequuntur aliquam officia.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Rerum totam magni veniam praesentium quae. Quidem
+                  unde quo maiores eos repudiandae voluptate labore, dolorem similique natus hic consectetur dicta
+                  distinctio
+                  sit nostrum debitis. Aliquid voluptate quas, eligendi officiis cumque enim, quidem dignissimos nisi id
+                  quisquam expedita quo quaerat eum numquam earum optio nulla, atque tenetur impedit recusandae magni
+                  deserunt
+                  a nobis commodi? Dolore repudiandae cumque aperiam, iusto illo odio, aliquam quod tempore magnam iure
+                  facilis voluptatem ab eligendi est tenetur quos itaque ullam molestiae corporis quaerat ipsum
+                  obcaecati!
+                  Iusto deleniti eum, sapiente expedita quae quos hic! At quis consequuntur aliquam officia.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Rerum totam magni veniam praesentium quae. Quidem
+                  unde quo maiores eos repudiandae voluptate labore, dolorem similique natus hic consectetur dicta
+                  distinctio
+                  sit nostrum debitis. Aliquid voluptate quas, eligendi officiis cumque enim, quidem dignissimos nisi id
+                  quisquam expedita quo quaerat eum numquam earum optio nulla, atque tenetur impedit recusandae magni
+                  deserunt
+                  a nobis commodi? Dolore repudiandae cumque aperiam, iusto illo odio, aliquam quod tempore magnam iure
+                  facilis voluptatem ab eligendi est tenetur quos itaque ullam molestiae corporis quaerat ipsum
+                  obcaecati!
+                  Iusto deleniti eum, sapiente expedita quae quos hic! At quis consequuntur aliquam officia.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Rerum totam magni veniam praesentium quae. Quidem
+                  unde quo maiores eos repudiandae voluptate labore, dolorem similique natus hic consectetur dicta
+                  distinctio
+                  sit nostrum debitis. Aliquid voluptate quas, eligendi officiis cumque enim, quidem dignissimos nisi id
+                  quisquam expedita quo quaerat eum numquam earum optio nulla, atque tenetur impedit recusandae magni
+                  deserunt
+                  a nobis commodi? Dolore repudiandae cumque aperiam, iusto illo odio, aliquam quod tempore magnam iure
+                  facilis voluptatem ab eligendi est tenetur quos itaque ullam molestiae corporis quaerat ipsum
+                  obcaecati!
+                  Iusto deleniti eum, sapiente expedita quae quos hic! At quis consequuntur aliquam officia.</p>
+              </label>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".sidebar-btn").click(function () {
+        $(".wrapper").toggleClass("custom-collapse");
+      });
+    });  
+  </script>
+  <script>
+    function ekjit() {
+      newWindow.document.close();
+      newWindow.close();
+    }
+    document.getElementById("kloj").addEventListener("click", ekjit);
+  </script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
